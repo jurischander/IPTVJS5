@@ -1,0 +1,10 @@
+<ion-view view-title="Телевидение">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item item-thumbnail-left" ng-repeat="channel in channels" type="item-text-wrap" ng-click="playStream(channel.url)">
+          <img ng-src="{{channel.icon}}">
+          <h2>{{channel.name}}</h2>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
